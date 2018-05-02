@@ -1,6 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <button class="btn btn-primary" (click)="saveServers()">Save</button>
+      <button class="btn btn-primary" (click)="loadServers()">Load</button>
+      <hr>
+      <button class="btn btn-primary" (click)="generateServers()">Generate</button>     
+      <button class="btn btn-primary" (click)="cleanServers()">Clean</button>
+      <hr>
       <input type="text" #serverName>
       <button class="btn btn-primary" (click)="onAddServer(serverName.value)">Add Server</button>
       <hr>
